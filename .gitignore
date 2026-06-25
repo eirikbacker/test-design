@@ -1,0 +1,30 @@
+# Runtime
+storybook-static
+node_modules
+**/dist
+**/mtds
+clojure/resources/
+clojure/mattilsynet-design.jar
+
+# Logs
+**/logs
+**/*.log
+**/npm-debug.log*
+
+# OS
+.DS_Store
+
+# Editor directories and files
+.npmrc
+.idea
+.zed
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.clj-kondo
+.lsp
+clojure/.cpcache
+clojure/.nrepl-port

@@ -1,0 +1,59 @@
+{
+  "name": "test-design",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build:tokens": "npx @digdir/designsystemet@latest tokens build --config designsystemet.config.json",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "npm run build && storybook build"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "npm": ">=10.0.0",
+    "node": ">=20.0.0"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "@digdir/designsystemet-react": "^1.16.1",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@digdir/designsystemet-css": "^1.16.1",
+    "@digdir/designsystemet-types": "^1.16.1",
+    "@handsontable/react-wrapper": "17.1.0",
+    "@phosphor-icons/core": "^2.1.1",
+    "@phosphor-icons/react": "^2.1.10",
+    "@storybook/addon-docs": "^10.4.6",
+    "@storybook/addon-themes": "^10.4.6",
+    "@storybook/react-vite": "^10.4.6",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "fast-glob": "^3.3.3",
+    "handsontable": "17.1.0",
+    "leaflet": "^2.0.0-alpha.1",
+    "oxlint": "^1.69.0",
+    "postcss": "^8.5.15",
+    "postcss-nesting": "^14.0.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-moveable": "^0.56.0",
+    "storybook": "^10.4.6",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.0",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

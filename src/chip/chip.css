@@ -1,0 +1,5 @@
+@layer klp {
+  .ds-chip {
+    transition: .2s;
+  }
+}

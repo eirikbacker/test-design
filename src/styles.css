@@ -1,0 +1,9 @@
+@layer ds, klp;
+@import url('@digdir/designsystemet-css');
+@import url('../design-tokens-build/theme.css');
+@import url('./button/button.css');
+@import url('./chip/chip.css');
+
+:root {
+  font-family: 'Arial', sans-serif;
+}
